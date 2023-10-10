@@ -4,7 +4,7 @@ protocol SkeletonLoadable { }
 
 extension SkeletonLoadable {
     func makeAnimationGroup(previousGroup: CAAnimationGroup? = nil) -> CAAnimationGroup {
-        let animDuration: CFTimeInterval = 1.5
+        let animDuration: CFTimeInterval = 0.5
         
         let anim1 = CABasicAnimation(keyPath: #keyPath(CAGradientLayer.backgroundColor))
         anim1.fromValue = UIColor.gradientLightGrey.cgColor
